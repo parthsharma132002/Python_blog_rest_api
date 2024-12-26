@@ -1,0 +1,21 @@
+python -m venv .venv
+
+source .venv/Scripts/activate         
+deactivate
+
+python -m pip install django
+
+django-admin startproject blog .
+
+python manage.py startapp api
+or
+---
+django-admin startapp api
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py runserver
+
+python -m pip install django djangorestframework
